@@ -43,3 +43,9 @@ a {
 #valasz{
   visibility:hidden;
 }
+
+
+input [type=number] {
+  margin: 0px auto 15px auto;
+  
+}
