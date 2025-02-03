@@ -4,9 +4,11 @@ body{
 
 .bg-fej {
   background-position: center;
+  background-image: url(drukletters.jpg);
   height: 250px;
   padding-top: 75px;
 }
+
 
 .bg-fej h1{
   color: white;
