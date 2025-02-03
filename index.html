@@ -65,6 +65,7 @@
     </div>
     <div class="row">
       <div class="col-md-6">
+        
         <h3>Mélynyomtatás</h3>
         <p>A 20. század elején tökéletesítik a mélynyomtatást, melynek elve az őskorig nyúlik vissza, majd később az
           ötvösművészek fejlesztették tovább. A 15. századig kézzel vésték a formákat. Majd savas maratással finomabb
@@ -89,45 +90,68 @@
           kevés területen használják. A hagyományosan nyomóformáról történő nyomtatással szemben eléggé lassúnak
           mondható. Eleinte kisebb példányszámú, kevésbé igényes termékeket gyártottak vele, de napjainkban akár 4-500
           példányszámú nyomatok gazdaságos, jó minőségű nyomtatására is van lehetőség. </p>
-<p><img src="nyomdagep_pultja.jpg" alt="Nyomdagép pultja" title="Nyomdagép pultja" class="img-thumbnail"></p>
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 bg-torzs">
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+              </div>
+              <div class="col-md-6 bg-torzs">         
+              </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-md-6">       
+        
+              </div>
+              <div class="col-md-6 bg-torzs">
+          <h3>Plakátnyomtatás</h3>
 
+          <p>Egy színes plakát nyomtatásának költségét meghatározó tényezők többek közt a <p> 
+            
+            <ul>
+              <li>papírlap minősége</li>
+              <li>papírlap mérete</li>
+            </ul>
+          
+          <p>A következő űrlapon plakátnyomtatáshoz lehet árat kalkulálni:</p>
+          
+          <form class="bg-torzs p-3 text-center">
+            <label for="szelesseg">Szélesség (mm):</label>
+            <input type="number" class="form-control" id="szelesseg" min="10" max="1000" value="297"/>
+            <label for="magassag">Magasság (mm):</label>
+            <input type="number" class="form-control" id="magassag" min="10" max="1400" value="420"/>
+            <label for="ptip">Papírtípus:</label>
+            <select class="form-control" id="papirtipus">
+              <option value="38">Pauszpapír (115g/m³)</option>
+              <option value="32">Matt, vastag, általános papír (120g/m³)</option>
+              <option value="45">Matt, normál, fotópapír (180g/m³)</option>
+              <option value="45">Fényes, normál, fotópapír (200g/m³)</option>
+              <option value="45">Szatén, normál, fotópapír (190g/m³)</option>
+              <option value="65">Művész, kreatív, kartonpapír (300g/m³)</option>
+            </select>
+            <input type="button" value="Kalkuláció" id="kalkulalGomb" />
+            <div>
+              <p>A kalkuláció alapja:</p>
+              <ul>
+                <li>területe: <span id="terulet"></span> dm<sup>2</sup></li>
+                <li>papírköltség: <span id="papir"></span> Ft/dm<sup>2</sup></li>
+              </ul>
+              <h2><span id="koltseg">?</span> Ft</h2>
+            </div>
+          </form>
+          
+<p><img src="nyomdagep_pultja.jpg" alt="Nyomdagép pultja" title="Nyomdagép pultja" class="img-thumbnail"></p>
 <div class="col-md4">
 
-  <h3>Plakátnyomtatás</h3>
-
-  <p>Egy színes plakát nyomtatásának költségét meghatározó tényezők többek közt a <p> 
-    
-    <ul>
-      <li>papírlap minősége</li>
-      <li>papírlap mérete</li>
-    </ul>
   
-  <p>A következő űrlapon plakátnyomtatáshoz lehet árat kalkulálni:</p>
-  
-  <form class="bg-torzs p-3 text-center">
-    <label for="szelesseg">Szélesség (mm):</label>
-    <input type="number" class="form-control" id="szelesseg" min="10" max="1000"/>
-    <label for="magassag">Magasság (mm):</label>
-    <input type="number" class="form-control" id="magassag" min="10" max="1400"/>
-    <label for="ptip">Papírtípus:</label>
-    <select class="form-control" id="papirtipus">
-      <option value="38">Pauszpapír (115g/m³)</option>
-      <option value="32">Matt, vastag, általános papír (120g/m³)</option>
-      <option value="45">Matt, normál, fotópapír (180g/m³)</option>
-      <option value="45">Fényes, normál, fotópapír (200g/m³)</option>
-      <option value="45">Szatén, normál, fotópapír (190g/m³)</option>
-      <option value="65">Művész, kreatív, kartonpapír (300g/m³)</option>
-    </select>
-    <input type="button" value="Kalkuláció" id="kalkulalGomb" />
-    <div>
-      <p>A kalkuláció alapja:</p>
-      <ul>
-        <li>területe: <span id="terulet"></span> dm<sup>2</sup></li>
-        <li>papírköltség: <span id="papir"></span> Ft/dm<sup>2</sup></li>
-      </ul>
-      <h2><span id="koltseg">?</span> Ft</h2>
-    </div>
-  </form>
   
   <script src="js/bootstrap.min.js"></script>
   <script src="nyomtatas.js"></script>
